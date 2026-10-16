@@ -1,0 +1,33 @@
+name: layout_matchers
+description: >-
+  Widget test matchers for on-screen layout: assert widgets appear in order, above, below or beside each other, aligned, overlapping, inside a parent or fully visible.
+version: 0.1.0
+repository: https://github.com/hurman74/layout_matchers
+issue_tracker: https://github.com/hurman74/layout_matchers/issues
+
+topics:
+  - testing
+  - widget
+  - layout
+  - flutter-test
+
+screenshots:
+  - description: A sign-up form at growing text scale, checked by four layout matchers on every frame.
+    path: doc/demo.gif
+  - description: The usual getRect and isTrue check next to isFullyVisible, with the real failure messages.
+    path: doc/comparison.png
+  - description: The form at 1.6x text, where isFullyVisible fails and shows the visible part of the button.
+    path: doc/large_text.png
+
+environment:
+  sdk: ">=3.8.0 <4.0.0"
+  flutter: ">=3.32.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
